@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/prin.css')}}">
+
+
+<div id="spin" class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <h1 class="display-4">ASOTAMI</h1>
+  <p class="lead">Promocionar los servicios de la escuela de Taekwondo ASOTAMI (Asociación de Taekwondo de Miramar)
+    mediante una página web.</p>
+  <hr class="my-4">
+  <p> + Info </p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Mas</a>
+</div>
+
+
+<div class="jumbotron">
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Nombre completo" aria-label="">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Numero Telefonico" aria-label="">
+    </div>
+  </div>
+
+
+  <br>
+
+
+  <p class="lead"> Para mas informacion llene el formulario</p>
+  <br>
+
+
+  <a class="btn btn-primary btn-lg" href="#" role="button">Enviar</a>
+
+</div>
+
+
+{% endblock %}

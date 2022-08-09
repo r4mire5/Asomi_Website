@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/estilo_contact.css')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<img id="img1" src="https://pngimg.com/uploads/taekwondo/taekwondo_PNG74.png" alt="taekwondo"/>
+
+<div id="form1" class="jumbotron">
+    <h1 class="d5"> Contactanos </h1> 
+        <br>
+    <p> ¡Puedes dejar tus datos  si te interesa uno de nuestros cursos! </p>
+        <br>
+<form>
+        <div class="mb-3">
+          <label for="nombre_a" class="form-label"> Nombre </label>
+          <input type="nombre" class="form-control" id="nombre_a" aria-describedby="n">
+        </div>
+        <div class="mb-3">
+            <label for="apellido_a" class="form-label"> Apellido </label>
+            <input type="apellido" class="form-control" id="apellido_a" aria-describedby="a">
+          </div>
+          <div class="mb-3">
+            <label for="Tel_a" class="form-label"> Numero Telefonico </label>
+            <input type="tel" class="form-control" id="tel_a" aria-describedby="t">
+          </div>
+          <div class="mb-3">
+            <label for="nota_a" class="form-label"> Notas </label>
+            <input id="coment" type="nota" class="form-control" id="nota_a" aria-describedby="no">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        
+        <br>
+       
+
+        <i id ="icon1" class="fa fa-whatsapp" ></i>
+        <i id ="icon2" class="fa fa-facebook-square"></i>
+        <i class="fab fa-waze"></i>
+
+</form>
+</div> 
+
+
+<nav id = "piepag" class="navbar navbar-expand-lg navbar-light bg-light" >
+
+<div class="collapse navbar-collapse" id="navbarNav"> 
+<p id = "CC" >ASOTAMI  Todos los derechos reservados © </p>
+
+      <ul id = "piepag1" class="navbar-nav"> 
+          <li class="nav-item" >
+              <a id = "piepag1" class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a id = "piepag1" class="nav-link" href="{{url_for('about')}}">Sobre Nosostros</a>
+              </li>
+              <li class="nav-item">
+                  <a id = "piepag1" class="nav-link" href="{{url_for('noticias')}}">Noticias</a>
+              </li>
+              <li class="nav-item">
+                  <a id = "piepag1" class="nav-link" href="{{url_for('historia')}}">Historia</a>
+              </li>
+              <li class="nav-item">
+                  <a id = "piepag1" class="nav-link" href="{{url_for('servicios')}}">Servicios</a>
+              </li>
+              <li class="nav-item">
+                  <a id = "piepag1" class="nav-link" href="{{url_for('contacto')}}">Contacto</a>
+          </li>
+      </ul>
+
+</nav>
+
+</body>
+
+{% endblock %}
