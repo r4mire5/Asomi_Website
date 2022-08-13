@@ -2,81 +2,34 @@
 
 {% block content %}
 
-<link rel="stylesheet" href="{{ url_for('static', filename='css/prin.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/principal.css') }}">
 
+<div class="container" style="border-style:dotted ; margin-left: 10%">
 
+  <div class="row" style="background-color: yellow;width: 150%">
 
-<div class="container">
+    <div class="col-sm-7" >
 
-  <div class="row">
-
-    <div class="col-sm-8">
-
-      <div class="jumbotron" id="box1">
-        <h2 class="display-5">Ven a ser parte de nuestra familia marcial</h2>
-        <br>
-        <p class="display-6"> Somos una escuela deportiva enfocada en compartir el espíritu del Taekwon-Do con nuestra comunidad</p>
-
-      
-        <p class="lead">Visitanos en Costa Rica, Puntarenas, Montes de Oro, Miramar, Frente al Banco Nacional</p>
-  
-
-        <a class="btn btn-primary btn-lg" href="#" role="button">Mas</a>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Mas</a>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Mas</a>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Mas</a>
-
+      <div class="jumbotron">
+        <h1 class="display-4">Unete a nuestro equipo!</h1>
+        <p class="lead">Aprende el camino de la defensa personal sin armas</p>
+        <p>Visitanos en Costa Rica, Puntarenas, Montres de oro, Miramar, frente al banco nacional</p>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-waze"></i>
+        
       </div>
 
     </div>
 
-   
+    <div class="col-sm">
+      <img style="max-width: 60% ;" src="https://scontent.fsyq1-1.fna.fbcdn.net/v/t31.18172-8/18121625_1098097673666928_430024877425142000_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-5Fm163SrW4AX87vBzA&_nc_ht=scontent.fsyq1-1.fna&oh=00_AT8ybts-uS7E-RxhrRiTcCToyWP8dQPXB6bpc1KTrFuyUg&oe=631DEAA2" alt="">
 
+      
+    </div>
 
-  </div>
   
-  <div class="row">
-
-    <div class="col-sm-12" style="text-align: center;"> Afiliaciones</div>
-    <a href="https://www.icoder.go.cr/"> <img src="data:image/png;base64,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" alt="icoder" style="size:50% ;" ></a>
-
-
-
-
   </div>
-
-
-
-
-
-
 </div>
-
-
-
-
-
-<div class="jumbotron">
-  <div class="row">
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Nombre completo" aria-label="">
-    </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Numero Telefonico" aria-label="">
-    </div>
-  </div>
-
-
-  <br>
-
-
-  <p class="lead"> Para mas informacion llene el formulario</p>
-  <br>
-
-
-  <a class="btn btn-primary btn-lg" href="#" role="button">Enviar</a>
-
-</div>
-
 
 {% endblock %}
